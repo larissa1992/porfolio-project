@@ -20,16 +20,16 @@
   margin-bottom: 50px;
 }
 
-h1,
-h2,
-h3 {
-  margin: 0;
-}
 h1 {
-  font-size: 50px;
+  font-size: 90px;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
 }
 h2 {
-  font-size: 40px;
+  font-size: 36px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-align: center;
 }
 h3 {
   font-size: 26px;
@@ -40,8 +40,11 @@ p {
   font-size: 18px;
   line-height: 1.5;
 }
-.header {
-  margin-top: 80px;
+
+.bg-warning {
+  background-color: #f9f7fe !important;
+  max-width: 100%;
+  padding: 40px 40px;
 }
 .rounded {
   border-radius: 0.25rem;
@@ -94,15 +97,18 @@ footer .email {
   .container {
     box-sizing: none;
   }
-  h1,
   h2 {
-    font-size: 10vw;
-    line-height: 1.2;
+    font-size: 7vw;
+    font-weight: bolder;
+  }
+  h1 {
+    font-size: 9vw;
+    font-weight: bolder;
     text-align: center;
   }
 
   h3 {
-    font-size: 8vw;
+    font-size: 6vw;
     text-align: center;
   }
   p {
