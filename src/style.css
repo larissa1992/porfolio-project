@@ -52,6 +52,16 @@ p {
   justify-content: center;
   margin-top: 40px;
 }
+footer {
+  text-align: center;
+  font-size: 5vw;
+}
+footer .email {
+  text-decoration: none;
+  color: #212529;
+  font-size: 4vw;
+  opacity: 70%;
+}
 .contact-link,
 .about-link {
   padding: 20px;
@@ -70,14 +80,7 @@ p {
   background-color: var(--background-color);
   color: white;
 }
-.contact-me {
-  text-align: center;
-  text-decoration: none;
-  font-size: 20px;
-}
-.email {
-  font-size: smaller;
-}
+
 .primary-link {
   border-radius: 4px;
   padding: 20px 15px;
@@ -87,7 +90,7 @@ p {
   box-shadow: var(--box-shadow);
   color: white;
 }
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .container {
     box-sizing: none;
   }
@@ -100,6 +103,9 @@ p {
 
   h3 {
     font-size: 8vw;
+    text-align: center;
+  }
+  p {
     text-align: center;
   }
   .button {
