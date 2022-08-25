@@ -19,21 +19,28 @@
   margin: 100px 0;
   margin-bottom: 50px;
 }
-
+.header {
+  background-color: #f9f7fe;
+  padding: 100px 40px;
+}
 h1 {
   font-size: 90px;
   font-weight: bold;
   font-family: "Playfair Display", serif;
+  line-height: 1;
 }
 h2 {
   font-size: 36px;
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
+  font-weight: bolder;
   text-align: center;
+  margin: 0;
 }
 h3 {
   font-size: 26px;
   opacity: 0.7;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
 }
 p {
   margin-top: 50px;
@@ -41,11 +48,6 @@ p {
   line-height: 1.5;
 }
 
-.bg-warning {
-  background-color: #f9f7fe !important;
-  max-width: 100%;
-  padding: 40px 40px;
-}
 .rounded {
   border-radius: 0.25rem;
 }
