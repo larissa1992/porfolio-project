@@ -8,20 +8,6 @@
   --background-color: #e395ef;
 }
 
-.body {
-  font-family: var(--default-font);
-  font-weight: 400;
-  color: #212529;
-  background-color: #fff;
-  line-height: 1 !important;
-  max-width: 100%;
-  margin: 100px 0;
-  margin-bottom: 50px;
-}
-.header {
-  background-color: #f9f7fe;
-  padding: 100px 40px;
-}
 h1 {
   font-size: 90px;
   font-weight: bold;
@@ -48,32 +34,41 @@ h3 {
 p {
   text-align: center;
   margin-top: 30px;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 30px;
 }
 
+footer {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  opacity: 90%;
+}
+footer a {
+  font-size: 25px;
+  text-decoration: none;
+  color: #4180de;
+}
+.body {
+  font-family: var(--default-font);
+  font-weight: 400;
+  color: #212529;
+  background-color: #fff;
+  line-height: 1 !important;
+  max-width: 100%;
+  margin: 100px 0;
+  margin-bottom: 50px;
+}
+.header {
+  background-color: #f9f7fe;
+  padding: 100px 40px;
+}
 .text-outline {
-  padding: 160px 60px;
+  padding: 130px 60px;
 }
 .rounded {
   border-radius: 0.25rem;
-}
-.button {
-  display: flex;
-  justify-content: center;
-  max-width: 60%;
-  margin: 0 auto;
-}
-
-footer {
-  text-align: center;
-  font-size: 5vw;
-}
-footer .email {
-  text-decoration: none;
-  color: #212529;
-  font-size: 4vw;
-  opacity: 70%;
 }
 .contact-link {
   display: inline-block;
@@ -85,7 +80,12 @@ footer .email {
   background-color: var(--background-color);
   border-radius: 20px;
 }
-
+.button {
+  display: flex;
+  justify-content: center;
+  max-width: 30%;
+  margin: 0 auto;
+}
 .primary-link {
   border-radius: 4px;
   padding: 20px 15px;
@@ -99,6 +99,18 @@ footer .email {
   color: var(--primary-color);
   background-color: white;
   cursor: pointer;
+}
+.content {
+  padding: 80px 30px;
+}
+.about-section {
+  margin: 100px 20px;
+}
+.dennis-picture {
+  max-width: 80%;
+  max-height: 70%;
+  border-radius: 20px;
+  margin: 100px 100px;
 }
 @media (max-width: 900px) {
   .text-outline {
@@ -124,6 +136,10 @@ footer .email {
     display: flex;
     justify-content: center;
     max-width: 60%;
+    margin: 0 auto;
+  }
+  .dennis-picture {
+    display: block;
     margin: 0 auto;
   }
 }
