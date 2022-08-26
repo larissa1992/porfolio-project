@@ -1,7 +1,6 @@
 :root {
-  --font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
-    "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
+  --default-font: "Poppins", sans-serif;
+  --heading-font: "Playfair Display", serif;
   --primary-color: #6c63ff;
   --secondary-color: #ffb67f;
   --border: 2px solid #e78133;
@@ -10,7 +9,7 @@
 }
 
 .body {
-  font-family: var(--font-family);
+  font-family: var(--default-font);
   font-weight: 400;
   color: #212529;
   background-color: #fff;
@@ -26,37 +25,46 @@
 h1 {
   font-size: 90px;
   font-weight: bold;
-  font-family: "Playfair Display", serif;
+  font-family: var(--heading-font);
   line-height: 1;
 }
+.header h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
 h2 {
-  font-size: 36px;
-  font-family: "Poppins", sans-serif;
-  font-weight: bolder;
   text-align: center;
+  font-size: 30px;
+  font-weight: bold;
   margin: 0;
 }
 h3 {
+  margin-top: 22px;
   font-size: 26px;
   opacity: 0.7;
-  font-family: "Poppins", sans-serif;
   font-weight: bolder;
 }
 p {
-  margin-top: 50px;
+  text-align: center;
+  margin-top: 30px;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 30px;
 }
 
+.text-outline {
+  padding: 160px 60px;
+}
 .rounded {
   border-radius: 0.25rem;
 }
-
-.navigation-links {
+.button {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  max-width: 60%;
+  margin: 0 auto;
 }
+
 footer {
   text-align: center;
   font-size: 5vw;
@@ -67,23 +75,15 @@ footer .email {
   font-size: 4vw;
   opacity: 70%;
 }
-.contact-link,
-.about-link {
+.contact-link {
+  display: inline-block;
+  text-align: center;
+  margin-top: 30px;
   padding: 20px;
-  margin-left: 40px;
   text-decoration: none;
   box-shadow: var(--box-shadow);
-  border-radius: 30px;
-}
-
-.about-link {
-  border: 1px solid var(--secondary-color);
-  background-color: var(--secondary-color);
-  color: white;
-}
-.contact-link {
   background-color: var(--background-color);
-  color: white;
+  border-radius: 20px;
 }
 
 .primary-link {
@@ -95,13 +95,17 @@ footer .email {
   box-shadow: var(--box-shadow);
   color: white;
 }
-@media (max-width: 576px) {
-  .container {
-    box-sizing: none;
+.primary-link:hover {
+  color: var(--primary-color);
+  background-color: white;
+  cursor: pointer;
+}
+@media (max-width: 900px) {
+  .text-outline {
+    margin: -100px 0;
   }
   h2 {
-    font-size: 7vw;
-    font-weight: bolder;
+    font-size: 5vw;
   }
   h1 {
     font-size: 9vw;
@@ -110,7 +114,7 @@ footer .email {
   }
 
   h3 {
-    font-size: 6vw;
+    font-size: 5vw;
     text-align: center;
   }
   p {
