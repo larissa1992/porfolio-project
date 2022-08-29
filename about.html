@@ -24,33 +24,37 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-white fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="/" title="Return to homepage">Larissa Adina</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" title="Return to homepage" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about.html" title="About Larissa Adina">About me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about.html#mail" title="Contact Larissa Adina">Contact me</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="container about-section">
+    <div class="container">
+        <nav class="d-flex justify-content-between">
+            <a href="/">
+                <img src="/images/logo.png" alt="" class="logo d-none d-md-block">
+                <img src="/images/logo-small.png" alt="" class="logo d-block d-md-none ms-0" width="
+                90px" height="60px">
+            </a>
+
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/about.html"> About</a>
+                </li>
+                <li class="active">
+                    <a href="/work.html">Work</a>
+                </li>
+                <li>
+                    <a href="/contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <h2 class="text-center m-5">Front-end developer based in Copenhagen </h2>
+
+    <div class="content-container m-0">
+
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-md-6">
                 <div class="content">
-                    <h2 class="text-center m-5">Front-end developer from Romania 🇷🇴</h2>
                     <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro earum
                         voluptates
                         atque.
@@ -65,18 +69,22 @@
                         quod autem earum odit ut libero.
                     </p>
 
-                    <footer class="m-5">
-                        📮 Contact me: <a href="mailto:adinalarissaro@gmail.com" id="mail"
-                            title="email">adinalarissaro@gmail.com</a>
-                    </footer>
-
                 </div>
             </div>
 
-            <div class="col-lg-6">
+            <div class="col-md-6">
                 <img src="/images/dennis.jpeg" class="dennis-picture img-fluid" alt="">
             </div>
 
+        </div>
+        <div class="row">
+            <div class="col-6 ">
+                <a href="/work.html" class="projects-link text-white">Check out my projects!
+                </a>
+            </div>
+            <div class="col-6">
+                <a href="/contact.html" class="contact-link text-white">Let's get in touch!</a>
+            </div>
         </div>
     </div>
 
