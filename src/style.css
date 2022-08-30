@@ -95,23 +95,15 @@ footer a {
   border-radius: 20px;
 }
 
-.button {
-  display: flex;
-  justify-content: center;
-  max-width: 59%;
-  margin: 0 auto;
-}
 .primary-link {
   border-radius: 4px;
-  padding: 20px 15px;
+  padding: 13px 15px;
   text-decoration: none;
   text-transform: capitalize;
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
   font-size: 15px;
-  display: flex;
-  justify-content: center;
   max-width: 60%;
   margin: 0 auto;
 }
@@ -136,11 +128,7 @@ footer a {
   max-width: 150px;
   max-height: 88px;
 }
-.fa-at,
-.fa-linkedin,
-.fa-facebook {
-  color: #780dd5;
-}
+
 nav {
   padding: 20px;
 }
@@ -168,6 +156,10 @@ nav li {
 nav li.active a {
   color: #4180de;
 }
+footer .social-media a {
+  margin: 0 15px;
+}
+
 @media (max-width: 576px) {
   .text-outline {
     padding: 8px 24px;
@@ -188,7 +180,9 @@ nav li.active a {
   p {
     text-align: center;
   }
-
+  footer h2 {
+    text-align: center;
+  }
   .dennis-picture {
     display: block;
     margin: 30px auto;
