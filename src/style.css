@@ -5,7 +5,7 @@
   --secondary-color: #ffb67f;
   --border: 2px solid #e78133;
   --box-shadow: 5px 5px 10px rgba(33, 29, 29, 0.3);
-  --background-color: #e395ef;
+  --background-color: rgb(33, 69, 33);
 }
 
 h1 {
@@ -68,9 +68,10 @@ footer a {
   background-color: #f9f7fe;
   padding: 100px 40px;
 }
-.text-outline {
-  padding: 7px 50px;
+.text-outline-monstera {
+  padding: 60px 20px;
 }
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -100,7 +101,7 @@ footer a {
   padding: 13px 15px;
   text-decoration: none;
   text-transform: capitalize;
-  background: var(--primary-color);
+  background-color: var(--background-color);
   box-shadow: var(--box-shadow);
   color: white;
   font-size: 15px;
@@ -108,7 +109,6 @@ footer a {
   margin: 0 auto;
 }
 .primary-link:hover {
-  color: var(--primary-color);
   background-color: white;
   cursor: pointer;
 }
@@ -118,6 +118,7 @@ footer a {
 .content-container {
   margin: 100px 20px;
 }
+
 .dennis-picture {
   max-width: 80%;
   max-height: 70%;
@@ -159,7 +160,9 @@ nav li.active a {
 footer .social-media a {
   margin: 0 15px;
 }
-
+.github-link {
+  font-size: 16px;
+}
 @media (max-width: 576px) {
   .text-outline {
     padding: 8px 24px;
