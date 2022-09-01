@@ -143,8 +143,7 @@ nav li a {
 }
 .my-picture {
   width: 200px;
-  border-radius: 40px;
-  border-top: 30%;
+  border-radius: 100px;
 }
 .logo {
   max-width: 150px;
@@ -197,7 +196,9 @@ footer .social-media a {
 }
 footer .social-media a:hover {
   color: var(--secondary-color);
-  transition: all 200ms ease-in-out;
+  box-shadow: 0 0 26px 4px var(--secondary-color);
+  border-radius: 100%;
+  transition: 0.5s ease-in-out;
 }
 .github-link,
 .netlify-link {
