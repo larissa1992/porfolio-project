@@ -82,6 +82,7 @@ nav li a {
 .text-outline {
   padding: 30px 20px;
   border: var(--border);
+  border-radius: 70px;
   box-shadow: var(--box-shadow);
   margin: 0 auto;
 }
