@@ -26,42 +26,72 @@
 
 <body>
 
-    <div class="header">
-        <h2 class="text-center">🙋‍♀️ Hello, I am</h2>
-        <h1 class="text-center">Larissa Adina</h1>
-        <h3 class="text-center">👩‍💻 Front-end developer, based in Copenhagen 🇩🇰</h3>
-        <div class="text-center mt-5">
-            <a href="/about.html" class="contact-link text-white" title="About Larissa Adina">About me
-            </a>
+    <nav class="ms-0 mb-0 d-flex justify-content-between">
+        <a href="/">
+            <img src="/images/logo.png" alt="Logo" class="logo d-none d-md-block">
+            <img src="/images/logo-small.png" alt="logo-small" class="logo d-block d-md-none ms-0" width="
+                90px" height="60px">
+        </a>
+
+        <ul>
+            <li class="active">
+                <a href="/" title="Homepage">Home</a>
+            </li>
+            <li>
+                <a href="/about.html" title="About Larissa Adina"> About</a>
+            </li>
+
+            <li>
+                <a href="/contact.html" title="Contact Larissa">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="header text-center">
+        <div class="row">
+            <div class="col">
+                <h2>🙋‍♀️ Hello, I am</h2>
+                <h1>Larissa Adina</h1>
+                <h3>👩‍💻Front-end developer, based in Copenhagen 🇩🇰</h3>
+            </div>
+            <div class="col-4"> <img src="/images/larisa.jpg" class="img-fluid my-picture" alt="Larissa's picture">
+            </div>
         </div>
     </div>
+
+    <div class="text-center mt-5">
+        <a href="/about.html" class="btn about-link" title="About Larissa Adina">About me
+        </a>
+    </div>
     <p class="text-center"> Scroll down so you can view some of my best featured projects </p>
-    <div class="container mt-5">
+    <div class="container mt-5 ms-2">
         <div class="row">
             <div class="col m-5 d-none d-md-block">
                 <img src="/images/monstera.png" alt="monstera project"
-                    class="img-fluid shadow rounded d-none d-sm-block">
+                    class="img-fluid shadow rounded d-none d-sm-block" height="300" width="600">
             </div>
-            <div class="col text-outline text-center">
+            <div class="col mt-5 text-outline text-center">
                 <h2>Monstera deliciosa project</h2>
-                <p class="text-muted"> The monstera page was my very first project that i built using primarly HTML5,
+                <p class="text-muted"> The monstera page was my very first project that i built using primarly
+                    HTML5,
                     CSS3 and a basic JavaScript to make alerts,use variables and call functions to make it more
                     interactive with the user..
                     It is a simple webpage, built in one day after following a 2 weeks course on SheCodes Basics
                     Workshop.
                 </p>
                 <div class="mt-3">
-                    <a href="#" class="btn btn-primary-link" title="Yoga project">Launch
+                    <a href="https://gentle-queijadas-9039b4.netlify.app/" target="_blank" class="btn btn-primary-link"
+                        title="Yoga project">Launch
                         Monstera Page</a>
                 </div>
             </div>
         </div>
 
-        <div class="row mt-5 text-center">
-            <div class="col d-none d-md-block text-outline">
+        <div class="row mt-3 text-center">
+            <div class="col mt-5 text-outline">
                 <h2>Weather app</h2>
                 <p class="text-muted">
-                    The weather app shows the forecast in real time with real data from hundreads of cities around the
+                    The weather app shows the forecast in real time with real data from hundreads of cities around
+                    the
                     globe by making an API request to the <a href="http://openweathermap.org" target="_blank"
                         class="text-dark">openweather.</a>
                     It can also track the weather in your city by clicking on the pin icon, and by locating your
@@ -69,7 +99,7 @@
                     This project was built in advanced JavaScript, CSS and HTML.
                 </p>
                 <div class="mt-3">
-                    <a href="https://dynamic-sprite-6a88de.netlify.app/" class="btn btn-primary-link"
+                    <a href="https://dynamic-sprite-6a88de.netlify.app/" target="_blank" class="btn btn-primary-link"
                         title="Weather project">Launch
                         Weather App</a>
                 </div>
@@ -86,7 +116,8 @@
             </div>
             <div class="col text-outline text-center">
                 <h2>Dictionary app</h2>
-                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit necessitatibus
+                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit
+                    necessitatibus
                     quis itaque
                     eaque
                     ratione quae repellendus ullam architecto. Perferendis libero corrupti facere nemo officia

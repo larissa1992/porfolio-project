@@ -2,10 +2,11 @@
   --default-font: "Poppins", sans-serif;
   --heading-font: "Playfair Display", serif;
   --default-color: #efe3d9;
-  --secondary-color: #e5b48f;
+  --header-color: #eddbd4;
+  --button-background-color: #89897d;
+  --secondary-color: #ffb8a0;
   --border: 1px solid #efe3d9;
   --box-shadow: 5px 5px 10px rgba(33, 29, 29, 0.3);
-  --background-color: #e6cdba;
 }
 
 h1 {
@@ -50,12 +51,16 @@ body {
   font-family: var(--default-font);
   font-weight: 400;
   color: rgb(86, 83, 83);
-  background-color: var(--default-color);
   line-height: 1 !important;
   max-width: 100%;
   margin-bottom: 50px;
 }
-.container-about {
+
+nav li a {
+  color: var(--background-color);
+}
+
+.about-container {
   font-weight: 400;
   background-color: white;
   line-height: 1 !important;
@@ -63,10 +68,11 @@ body {
   margin-bottom: 50px;
 }
 .header {
-  background: var(--background-color);
+  background: var(--header-color);
   box-shadow: 10px 10px 20px rgba(32, 123, 199, 0.2);
-  padding: 37px 40px;
-  color: white;
+  color: #89897d;
+  margin: 0 auto;
+  padding: 60px 40px;
 }
 .header h2 {
   font-size: 20px;
@@ -74,19 +80,25 @@ body {
   margin: 0;
 }
 .text-outline {
-  padding: 70px 20px;
+  padding: 40px 20px;
 }
 
-.contact-link {
+.about-link {
   display: inline-block;
   text-align: center;
   margin: 0 auto;
-  padding: 18px 14px;
+  padding: 16px 14px;
+  font-size: 18px;
   text-decoration: none;
+  background-color: var(--header-color);
   box-shadow: var(--box-shadow);
-  background-color: (--default-color);
   border: var(--border);
-  border-radius: 20px;
+  border-radius: 10px;
+}
+.contact-link:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
 }
 .projects-link {
   display: inline-block;
@@ -102,18 +114,22 @@ body {
 .btn-primary-link {
   border-radius: 4px;
   padding: 13px 15px;
-  background-color: var(--background-color);
+  background-color: var(--header-color);
   box-shadow: var(--box-shadow);
-  color: white;
   font-size: 11px;
 }
 .primary-link:hover {
   background-color: white;
+  color: dark;
   cursor: pointer;
 }
 
 .content-container {
   margin: 100px 20px;
+  text-align: center;
+}
+.content-container a:hover {
+  color: var(--secondary-color);
 }
 
 .dennis-picture {
@@ -121,6 +137,11 @@ body {
   max-height: 70%;
   border-radius: 20px;
   margin: 40px 80px;
+}
+.my-picture {
+  width: 200px;
+  border-radius: 40px;
+  border-top: 30%;
 }
 .logo {
   max-width: 150px;
@@ -137,6 +158,18 @@ nav a {
 }
 nav a:hover {
   transition: all 100ms ease-in-out;
+  color: var(--secondary-color);
+}
+.active a {
+  color: var(--secondary-color) !important;
+}
+a {
+  color: #212529;
+}
+a:hover {
+  transition: all 100ms ease-in-out;
+  color: var(--secondary-color);
+  text-decoration: underline;
 }
 nav ul {
   margin: 27px;
