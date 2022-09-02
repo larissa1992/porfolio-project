@@ -203,45 +203,25 @@ footer .social-media a:hover {
 }
 .github-link,
 .netlify-link {
-  font-size: 10px;
+  font-size: 15px;
   color: var(--secondary-color);
 }
 
 @media (max-width: 576px) {
-  .text-outline {
-    padding: 8px 24px;
-  }
   h2 {
-    font-size: 5vw;
+    font-size: 4vw;
   }
   h1 {
-    font-size: 9vw;
+    font-size: 8vw;
     font-weight: bolder;
     text-align: center;
   }
 
   h3 {
-    font-size: 5vw;
-    text-align: center;
+    font-size: 4vw;
   }
   p {
-    text-align: center;
-  }
-  footer h2 {
-    text-align: center;
-  }
-  .dennis-picture {
-    display: block;
-    margin: 30px auto;
-  }
-  .about-footer {
-    margin: 0 auto;
-  }
-  .projects-link {
-    max-width: 100%;
-    font-size: 15px;
-    margin: 0 auto;
-    padding: 12px;
+    font-size: 3vw;
   }
 
   nav {
@@ -252,5 +232,9 @@ footer .social-media a:hover {
   }
   nav ul {
     margin: 20px 0;
+  }
+  .github-link,
+  .netlify-link {
+    font-size: 3vw;
   }
 }
