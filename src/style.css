@@ -223,6 +223,12 @@ footer .social-media a:hover {
   p {
     font-size: 3vw;
   }
+  .my-picture {
+    max-width: 131px;
+    height: 167px;
+    position: relative;
+    left: -12px;
+  }
 
   nav {
     padding: 9px 0;
