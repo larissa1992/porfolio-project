@@ -128,14 +128,6 @@ nav li a {
   cursor: pointer;
 }
 
-.content-container {
-  margin: 100px 20px;
-  text-align: center;
-}
-.content-container a:hover {
-  color: var(--secondary-color);
-}
-
 .dennis-picture {
   max-width: 80%;
   max-height: 70%;
@@ -150,6 +142,9 @@ nav li a {
   max-width: 150px;
   max-height: 88px;
 }
+.skills-container {
+  margin: 50px 0;
+}
 
 nav {
   padding: 20px;
@@ -159,21 +154,16 @@ nav a {
   color: #212529;
   opacity: 80%;
 }
-nav a:hover {
-  transition: all 100ms ease-in-out;
+a:hover {
+  text-decoration: none;
   color: var(--secondary-color);
+  box-shadow: 0 0 26px 7px var(--header-color);
+  transition: 0.5s ease-in-out;
 }
 .active a {
   color: var(--secondary-color) !important;
 }
-a {
-  color: #212529;
-}
-a:hover {
-  transition: all 100ms ease-in-out;
-  color: var(--secondary-color);
-  text-decoration: underline;
-}
+
 nav ul {
   margin: 27px;
   padding: 0;
