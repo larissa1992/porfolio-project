@@ -65,6 +65,7 @@ nav li a {
   line-height: 1 !important;
   max-width: 100%;
   margin-bottom: 50px;
+  margin-left: 10px;
 }
 .header {
   background: var(--header-color);
@@ -90,13 +91,13 @@ nav li a {
   display: inline-block;
   text-align: center;
   margin: 0 auto;
-  padding: 16px 14px;
+  padding: 20px 22px;
   font-size: 18px;
   text-decoration: none;
   background-color: var(--header-color);
   box-shadow: var(--box-shadow);
   border: var(--border);
-  border-radius: 10px;
+  border-radius: 3px 40px;
 }
 .contact-link:hover {
   background-color: white;
@@ -128,23 +129,23 @@ nav li a {
 }
 
 .my-picture {
-  width: 200px;
-  border-radius: 100px;
+  width: 300px;
+  border-radius: 1000px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
+
 .logo {
   max-width: 150px;
   max-height: 88px;
 }
+
 .skills-container {
-  margin: 50px 0;
+  margin: 50px 20x;
 }
 a {
   color: #212529;
   text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-  color: var(--secondary-color);
 }
 
 nav {
@@ -157,9 +158,11 @@ nav a {
 }
 nav a:hover {
   text-decoration: none;
-  color: var(--secondary-color);
-  box-shadow: 0 0 26px 7px var(--header-color);
+  color: #212529;
+  opacity: 60%;
+  box-shadow: 0 0 60px 20px var(--header-color);
   transition: 0.5s ease-in-out;
+  border-radius: 10px;
 }
 nav .active a {
   color: var(--secondary-color) !important;
@@ -188,14 +191,26 @@ footer .social-media a {
 }
 footer .social-media a:hover {
   color: var(--secondary-color);
-  box-shadow: 0 0 26px 4px var(--secondary-color);
+  box-shadow: 0 0 1px -3px var(--secondary-color);
   border-radius: 100%;
   transition: 0.5s ease-in-out;
 }
 .github-link,
 .netlify-link {
-  font-size: 15px;
-  color: var(--secondary-color);
+  font-size: 16px;
+  color: #999a9c;
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 20px;
+  font-family: "Poppins";
+}
+.github-link:hover {
+  text-decoration: underline;
+  color: #212529;
+}
+.netlify-link:hover {
+  text-decoration: underline;
+  color: #212529;
 }
 
 @media (max-width: 576px) {
